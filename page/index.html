@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta discription="Blog">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../Styles/style.css">
+
+  <title>Hyper Journey</title>
+
+
+ </head>
+ <body onload="getPosts()">
+
+  <div class="top-content">
+    <video poster="../pictures/background1.jpg" playsinline autoplay muted loop>
+      <source src="../video/background-video.mp4" type="video/mp4">
+    </video> 
+    
+    <nav class="nav">
+      <div class="menu-btn">
+        <div class="menu-btn__burger"></div>
+      </div>
+      <div id="link-display">
+        <a href="url">Home</a>
+        <a href="url">Old Posts</a>
+        <a href="url">Contact</a>
+      </div>
+      <div class="social-media-icon">
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+      </div>
+    </nav>
+
+    <header>
+      <h1>The blob in Infinite Space</h1>
+      <h2>This is the journey of the blob in infinate space<br>here you can read about everything from space unicorns to hp-sauce</h2>
+      
+      <!-- <a href="#section1" class="arrow down"></a> -->
+      <a href="#section1"><svg class="arrows">
+        <path class="a1" d="M0 0 L30 32 L60 0"></path>
+        <path class="a2" d="M0 20 L30 52 L60 20"></path>
+        <path class="a3" d="M0 40 L30 72 L60 40"></path>
+      </svg></a>
+
+    </header>
+
+  </div>
+  
+  <main id="section1">
+  <div id="postSummaries"></div>
+  </main>
+
+
+ </body>
+ <script src="../script/script.js"></script> 
+</html>
