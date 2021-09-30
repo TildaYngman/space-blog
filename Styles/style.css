@@ -65,12 +65,13 @@ a {
       -ms-flex-align: center;
           align-items: center;
   width: 100vw;
-  height: 8vh;
+  height: 9vh;
   background-color: transparent;
 }
 
 .top-content #link-display {
   display: none;
+  margin-left: 35px;
 }
 
 .top-content .nav #link-display a {
@@ -80,7 +81,7 @@ a {
   font-size: 1em;
 }
 
-.top-content .nav a:hover {
+.top-content .nav #link-display a:hover {
   text-decoration: line-through;
 }
 
@@ -189,7 +190,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 20px 0 auto;
+  margin: 0 30px 0 auto;
 }
 
 .top-content .fa {
@@ -213,31 +214,33 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
 }
 
 header h1 {
   color: #efefef;
-  font-size: calc(18px + 1.5vw);
   text-align: center;
-  margin: 50px auto;
+  margin: 150px auto 20px auto;
 }
 
 header h2 {
   color: #efefef;
   text-align: center;
-  margin-top: 20px;
 }
 
-.arrows {
+header .arrows {
   width: 60px;
   height: 72px;
-  position: absolute;
-  left: 50%;
-  margin-left: -30px;
-  bottom: 20px;
+  margin-top: 150px;
 }
 
-.arrows path {
+header .arrows path {
   stroke: #efefef;
   fill: transparent;
   stroke-width: 2px;
@@ -275,19 +278,19 @@ header h2 {
   }
 }
 
-.arrows path.a1 {
+header .arrows path.a1 {
   animation-delay: -1s;
   -webkit-animation-delay: -1s;
   /* Safari 和 Chrome */
 }
 
-.arrows path.a2 {
+header .arrows path.a2 {
   animation-delay: -0.5s;
   -webkit-animation-delay: -0.5s;
   /* Safari 和 Chrome */
 }
 
-.arrows path.a3 {
+header .arrows path.a3 {
   animation-delay: 0s;
   -webkit-animation-delay: 0s;
   /* Safari 和 Chrome */
@@ -359,7 +362,10 @@ header h2 {
   width: 80vw;
   height: 80vh;
   padding: 40px;
-  border: 1px solid white;
+  border: 1px solid #9d91fc;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 4px 4px 0 #9d91fc, 0 6px 20px 0 #9d91fc;
+          box-shadow: 0 4px 4px 0 #9d91fc, 0 6px 20px 0 #9d91fc;
 }
 
 @media screen and (max-width: 600px) {
