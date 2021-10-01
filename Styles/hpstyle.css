@@ -1,7 +1,8 @@
 body {
   margin: 0;
   height: 100vh;
-  background-color: pink;
+  background-color: #c2ffc0;
+  cursor: none;
 }
 
 #custom-cursor {
@@ -15,17 +16,17 @@ body {
           animation: rotate 1s;
 }
 
-@-webkit-keyframes {
+@-webkit-keyframes rotate {
   50% {
-    -webkit-transform: rotate(120deg);
-            transform: rotate(120deg);
+    -webkit-transform: rotate(-130deg);
+            transform: rotate(-130deg);
   }
 }
 
-@keyframes {
+@keyframes rotate {
   50% {
-    -webkit-transform: rotate(120deg);
-            transform: rotate(120deg);
+    -webkit-transform: rotate(-130deg);
+            transform: rotate(-130deg);
   }
 }
 /*# sourceMappingURL=hpstyle.css.map */

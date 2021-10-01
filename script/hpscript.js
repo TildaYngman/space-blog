@@ -5,15 +5,9 @@ const onMouseMove = (e) =>{
 }
 document.addEventListener('mousemove', onMouseMove);
 
-// let cursorRotate = false;
-
-// function rotate(){ 
-//  if (cursorRotate === false) {
-//         cursor.style.transform = "rotate(-120deg)";
-//         cursor.style.transition = "all 1s";
-//         cursorRotate = true;  
-// }else {
-//         cursor.style.transform = "none";
-//         cursorRotate = false;
-//     }
-// }
+function rotate() {
+      cursor.classList.add('rotate'); //adds class of open and then the css styles the hamburgerbar
+        setTimeout(function(){ 
+            cursor.classList.remove('rotate');}
+            , 1000);
+  };

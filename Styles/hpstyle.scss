@@ -2,13 +2,12 @@
   body {
     margin: 0;
     height: 100vh;
-    background-color: pink;
-    // cursor: none;
+    background-color: rgb(194, 255, 192);
+    cursor: none;
   }
 
   #custom-cursor {
     position: absolute;
-    // background-image: url(../pictures/cursor.png);
     height: 70px;
     width: 70px;
   }
@@ -17,9 +16,10 @@
     animation: rotate 1s;
   }
 
-  @keyframes {
-    50% {transform: rotate(120deg);}
+  @keyframes rotate {
+    50% {transform: rotate(-130deg);}
   }
+  
 
   //make animation 
   //call class on click 
