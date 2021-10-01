@@ -2,6 +2,26 @@
   body {
     margin: 0;
     height: 100vh;
-    cursor: url("../pictures/cursor.png"), auto;
-    background-color: red;
+    background-color: pink;
+    // cursor: none;
   }
+
+  #custom-cursor {
+    position: absolute;
+    // background-image: url(../pictures/cursor.png);
+    height: 70px;
+    width: 70px;
+  }
+
+  .rotate {
+    animation: rotate 1s;
+  }
+
+  @keyframes {
+    50% {transform: rotate(120deg);}
+  }
+
+  //make animation 
+  //call class on click 
+  //remove class after delay
+  
