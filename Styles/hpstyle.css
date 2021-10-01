@@ -1,7 +1,31 @@
 body {
   margin: 0;
   height: 100vh;
-  cursor: url("../pictures/cursor.png"), auto;
-  background-color: red;
+  background-color: pink;
+}
+
+#custom-cursor {
+  position: absolute;
+  height: 70px;
+  width: 70px;
+}
+
+.rotate {
+  -webkit-animation: rotate 1s;
+          animation: rotate 1s;
+}
+
+@-webkit-keyframes {
+  50% {
+    -webkit-transform: rotate(120deg);
+            transform: rotate(120deg);
+  }
+}
+
+@keyframes {
+  50% {
+    -webkit-transform: rotate(120deg);
+            transform: rotate(120deg);
+  }
 }
 /*# sourceMappingURL=hpstyle.css.map */
