@@ -16,6 +16,10 @@ body {
           animation: rotate 1s;
 }
 
+#blobAppear {
+  padding-top: 55px;
+}
+
 @-webkit-keyframes rotate {
   50% {
     -webkit-transform: rotate(-130deg);

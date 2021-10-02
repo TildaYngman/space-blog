@@ -16,12 +16,10 @@
     animation: rotate 1s;
   }
 
+  #blobAppear {
+    padding-top: 55px;
+  }
+
   @keyframes rotate {
     50% {transform: rotate(-130deg);}
   }
-  
-
-  //make animation 
-  //call class on click 
-  //remove class after delay
-  
