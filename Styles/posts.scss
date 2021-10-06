@@ -1,0 +1,60 @@
+@import "variable.scss";
+main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #060408;
+  z-index: 0;
+
+  #postSummaries {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .card-wrapper__card {
+    margin: 80px 40px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 60vh;
+    padding: 40px;
+    border: 1px solid #9d91fc;
+    border-radius: 5px;
+    box-shadow: 0 4px 4px 0 rgb(157, 145, 252), 0 6px 20px 0 rgb(157, 145, 252);
+  }
+
+  .card-wrapper__content {
+    padding-left: 30px;
+    h3 {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+img {
+  width: 20vw;
+  min-width: 215px;
+  border-radius: 50%;
+  animation: morph 8s ease-in-out infinite;
+      
+  @keyframes morph { 
+    0% {
+      border-radius:  70% 50% 40% 80% / 70% 40% 80% 50%;
+    }     
+    50% {
+      border-radius:  40% 70% 80% 50% / 60% 70% 40% 60%;
+    }    
+    100% {
+      border-radius:  70% 50% 40% 80% / 70% 40% 80% 50%;
+    }
+  }
+}

@@ -15,15 +15,18 @@ function rotate() {
   }; 
 
 playground.onclick = userClicked;
+
 function userClicked(e) {
     rotate() 
     setTimeout(function() {
     var x = e.pageX;
-    var y = e.pageY;
+    var y = e.pageY; 
     var blob = document.getElementById("blobAppear");
+    console.log(blob);
     blobAppear.style.display = '';
     blobAppear.style.position = 'absolute';
     blobAppear.style.left = x + 'px';
     blobAppear.style.top = y + 'px';
     }, 400);
+   
 }

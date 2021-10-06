@@ -20,7 +20,7 @@
     var wrapper = document.getElementById("postSummaries")
       wrapper.innerHTML +=
        `<div class="card-wrapper__card">
-          <a href="./pages/post.html?id=${card.id}">
+          <a href="../page/hp.html">
             <img src="${card.previewImage}" alt="image" />
           
           <div class="card-wrapper__content">

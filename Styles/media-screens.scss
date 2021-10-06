@@ -1,0 +1,36 @@
+@media screen and (max-width: 992px) {
+    main #postSummaries .card-wrapper__card {
+      flex-direction: column; 
+      width: 80vw;
+      margin: 20px 10px;
+    }
+  }
+  
+  @media screen and (max-width: 768px){
+    #link-display{
+      width: 100vw;
+      height: auto;
+      position: absolute; //parent har position relative och denna absolute för att det ska förhålla sig till naven.
+      top: 8vh; // Gör att positionen börjar där naven slutar.
+      display: none;
+      display: flex;
+      flex-direction: column;
+      background-color: #333333;
+    }
+  
+    .top-content .nav{
+      background-color: #060408;
+    }
+    .nav a {
+      display: flex;
+      flex-direction: column;
+    }
+    main{
+      height: 150%; // Why do I need 150 % on this one? it has to inherit the wrong height from somewhere. 
+    }
+    main #postSummaries {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }

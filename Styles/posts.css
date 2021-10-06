@@ -1,0 +1,95 @@
+main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #060408;
+  z-index: 0;
+}
+
+main #postSummaries {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main .card-wrapper__card {
+  margin: 80px 40px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50vw;
+  height: 60vh;
+  padding: 40px;
+  border: 1px solid #9d91fc;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 4px 4px 0 #9d91fc, 0 6px 20px 0 #9d91fc;
+          box-shadow: 0 4px 4px 0 #9d91fc, 0 6px 20px 0 #9d91fc;
+}
+
+main .card-wrapper__content {
+  padding-left: 30px;
+}
+
+main .card-wrapper__content h3 {
+  margin-bottom: 10px;
+}
+
+img {
+  width: 20vw;
+  min-width: 215px;
+  border-radius: 50%;
+  -webkit-animation: morph 8s ease-in-out infinite;
+          animation: morph 8s ease-in-out infinite;
+}
+
+@-webkit-keyframes morph {
+  0% {
+    border-radius: 70% 50% 40% 80% / 70% 40% 80% 50%;
+  }
+  50% {
+    border-radius: 40% 70% 80% 50% / 60% 70% 40% 60%;
+  }
+  100% {
+    border-radius: 70% 50% 40% 80% / 70% 40% 80% 50%;
+  }
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 70% 50% 40% 80% / 70% 40% 80% 50%;
+  }
+  50% {
+    border-radius: 40% 70% 80% 50% / 60% 70% 40% 60%;
+  }
+  100% {
+    border-radius: 70% 50% 40% 80% / 70% 40% 80% 50%;
+  }
+}
+/*# sourceMappingURL=posts.css.map */
