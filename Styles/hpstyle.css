@@ -1,14 +1,201 @@
-body {
+*, *:before, *:after {
   margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
   height: 100vh;
-  background-color: #c2ffc0;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   cursor: none;
+  overflow: hidden;
 }
 
 #custom-cursor {
   position: absolute;
   height: 70px;
   width: 70px;
+  pointer-events: none;
+}
+
+a {
+  color: #efefef;
+}
+
+.top-content {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.top-content video {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+
+.top-content .nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 9vh;
+  z-index: 9999;
+  background-color: transparent;
+}
+
+.top-content .nav #link-display a {
+  padding: 10px;
+  margin-left: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+.top-content .nav #link-display a:hover {
+  text-decoration: line-through;
+}
+
+.top-content .menu-btn {
+  position: relative;
+  margin-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  border: none;
+}
+
+.top-content .menu-btn__burger {
+  width: 40px;
+  height: 5px;
+  background: #efefef;
+  border-radius: 5px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.top-content .menu-btn__burger::before,
+.top-content .menu-btn__burger::after {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 5px;
+  background: #efefef;
+  border-radius: 5px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.top-content .menu-btn__burger::before {
+  -webkit-transform: translateY(-14px);
+          transform: translateY(-14px);
+}
+
+.top-content .menu-btn__burger::after {
+  -webkit-transform: translateY(14px);
+          transform: translateY(14px);
+}
+
+.top-content .menu-btn.open .menu-btn__burger {
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.top-content .menu-btn.open .menu-btn__burger::before {
+  -webkit-transform: rotate(45deg) translate(35px, -35px);
+          transform: rotate(45deg) translate(35px, -35px);
+}
+
+.top-content .menu-btn.open .menu-btn__burger::after {
+  -webkit-transform: rotate(-45deg) translate(35px, 35px);
+          transform: rotate(-45deg) translate(35px, 35px);
+}
+
+.top-content .social-media-icon {
+  height: 8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 30px 0 auto;
+}
+
+.top-content .fa {
+  padding: 20px;
+  font-size: 25px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  background: transparent;
+}
+
+.top-content .fa:hover {
+  opacity: 0.7;
+}
+
+.unclickable-playground {
+  height: 70vh;
+  width: 80vw;
+  background-color: #efefef;
+  border: 1px solid #9d91fc;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 4px 4px 0 #9d91fc, 0 6px 20px 0 #9d91fc;
+          box-shadow: 0 4px 4px 0 #9d91fc, 0 6px 20px 0 #9d91fc;
+}
+
+#playground {
+  height: 57vh;
+  width: 74vw;
+  background-color: transparent;
 }
 
 .rotate {
@@ -18,6 +205,7 @@ body {
 
 #blobAppear {
   padding-top: 55px;
+  pointer-events: none;
 }
 
 @-webkit-keyframes rotate {
