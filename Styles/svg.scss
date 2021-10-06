@@ -1,0 +1,53 @@
+@import "variable.scss";
+header {
+    height: 91vh;
+    position: absolute; //parent är top-content och den har position relative
+    top: 9vh; // headern ska börja under naven som är 9vh
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+
+    h1 {
+      color: $baseColorText;
+      text-align: center;
+    }
+
+    h2 {
+      color: $baseColorText;
+      text-align: center;
+    }
+
+    .arrows {
+      width: 60px;
+      height: 72px;
+    }
+    
+    .arrows path {
+      stroke: $baseColorText;
+      fill: transparent;
+      stroke-width: 2px;	
+      animation: arrow 2s infinite;
+      -webkit-animation: arrow 2s infinite; 
+    }
+    
+    @keyframes arrow {
+    0% {opacity:0}
+    40% {opacity:1}
+    80% {opacity:0}
+    100% {opacity:0}
+    }
+    
+    .arrows path.a1 {
+      animation-delay:-1s;
+    }
+    
+    .arrows path.a2 {
+      animation-delay:-0.5s;
+    }
+    
+    .arrows path.a3 {	
+      animation-delay:0s;
+    }
+  }
