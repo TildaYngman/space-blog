@@ -1,4 +1,6 @@
 let cursor = document.getElementById('custom-cursor');
+let playground = document.getElementById('playground');
+
 const onMouseMove = (e) =>{
     cursor.style.left = e.pageX + 'px'; //e.pageX & Y generates a number of where the cursor is on the screen
     cursor.style.top = e.pageY + 'px';
@@ -12,8 +14,9 @@ function rotate() {
             , 1000);
   }; 
 
-document.onclick = userClicked;
+playground.onclick = userClicked;
 function userClicked(e) {
+    rotate() 
     setTimeout(function() {
     var x = e.pageX;
     var y = e.pageY;

@@ -15,7 +15,7 @@
  </head>
  <body onload="getPosts()">
 
-  <div class="top-content">
+  <div class="top-content" id="top">
     <video poster="../pictures/background1.jpg" playsinline autoplay muted loop>
       <source src="../video/background-video.mp4" type="video/mp4">
     </video> 
@@ -25,9 +25,8 @@
         <div class="menu-btn__burger"></div>
       </div>
       <div id="link-display">
-        <a href="url">Home</a>
-        <a href="url">Old Posts</a>
-        <a href="url">Contact</a>
+        <a href="#top">Home</a>
+        <a href="#section1">Posts</a>
       </div>
       <div class="social-media-icon">
         <a href="#" class="fa fa-instagram"></a>
@@ -50,12 +49,11 @@
 
   </div>
   
-  <main class="postcontainer" id="section1"> 
-  <!-- main har en class för styling och ett id för scrollfunctionen -->
+  <main id="section1"> 
 
     <div id="postSummaries"></div>
   <!-- postSummaries är ett id för att den plockas upp som elementByID i js -->
-    
+    <div class="hidden-content"></div>
   </main>
 
 

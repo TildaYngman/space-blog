@@ -21,7 +21,7 @@
       wrapper.innerHTML +=
        `<div class="card-wrapper__card">
           <a href="./pages/post.html?id=${card.id}">
-            <img src="${card.previewImage}" alt="A random image" />
+            <img src="${card.previewImage}" alt="image" />
           
           <div class="card-wrapper__content">
             <h3>${card.title}</h3>

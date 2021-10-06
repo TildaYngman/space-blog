@@ -50,12 +50,12 @@ a {
       align-items: center;
       width: 100vw;
       height: 9vh;
+      z-index: 9999;
       background-color: transparent;
     }
   
     #link-display {
       display: none;
-      margin-left: 35px; //to get the links underneath 
     } 
   
     .nav #link-display a {
@@ -197,19 +197,19 @@ a {
     }
   }
 
-.postcontainer {
+main {
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #060408;
-  z-index: -1;
+  z-index: 0;
 
   #postSummaries {
     position: absolute;
-    width: 100vw;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -258,8 +258,8 @@ img {
 }
 
 @media screen and (max-width: 992px) {
-  .postcontainer #postSummaries .card-wrapper__card {
-    flex-direction: column;
+  main #postSummaries .card-wrapper__card {
+    flex-direction: column; 
     width: 80vw;
     margin: 20px 10px;
   }
@@ -267,24 +267,27 @@ img {
 
 @media screen and (max-width: 768px){
   #link-display{
-    width: 30vw;
+    width: 100vw;
     height: auto;
-    min-width: 215px;
     position: absolute; //parent har position relative och denna absolute för att det ska förhålla sig till naven.
     top: 8vh; // Gör att positionen börjar där naven slutar.
     display: none;
     display: flex;
     flex-direction: column;
-    background-color: transparent;
+    background-color: #333333;
+  }
+
+  .top-content .nav{
+    background-color: #060408;
   }
   .nav a {
     display: flex;
     flex-direction: column;
   }
-  .postcontainer{
-    height: 150%;
+  main{
+    height: 150%; // Why do I need 150 % on this one? it has to inherit the wrong height from somewhere. 
   }
-  .postcontainer #postSummaries {
+  main #postSummaries {
     flex-direction: column;
     justify-content: center;
     align-items: center;

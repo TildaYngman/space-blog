@@ -67,12 +67,12 @@ a {
           align-items: center;
   width: 100vw;
   height: 9vh;
+  z-index: 9999;
   background-color: transparent;
 }
 
 .top-content #link-display {
   display: none;
-  margin-left: 35px;
 }
 
 .top-content .nav #link-display a {
@@ -266,9 +266,9 @@ header .arrows path.a3 {
           animation-delay: 0s;
 }
 
-.postcontainer {
+main {
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -280,12 +280,12 @@ header .arrows path.a3 {
       -ms-flex-align: center;
           align-items: center;
   background-color: #060408;
-  z-index: -1;
+  z-index: 0;
 }
 
-.postcontainer #postSummaries {
+main #postSummaries {
   position: absolute;
-  width: 100vw;
+  width: 100%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -296,7 +296,7 @@ header .arrows path.a3 {
           flex-direction: row;
 }
 
-.postcontainer .card-wrapper__card {
+main .card-wrapper__card {
   margin: 80px 40px;
   position: relative;
   display: -webkit-box;
@@ -321,11 +321,11 @@ header .arrows path.a3 {
           box-shadow: 0 4px 4px 0 #9d91fc, 0 6px 20px 0 #9d91fc;
 }
 
-.postcontainer .card-wrapper__content {
+main .card-wrapper__content {
   padding-left: 30px;
 }
 
-.postcontainer .card-wrapper__content h3 {
+main .card-wrapper__content h3 {
   margin-bottom: 10px;
 }
 
@@ -362,7 +362,7 @@ img {
 }
 
 @media screen and (max-width: 992px) {
-  .postcontainer #postSummaries .card-wrapper__card {
+  main #postSummaries .card-wrapper__card {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -374,9 +374,8 @@ img {
 
 @media screen and (max-width: 768px) {
   #link-display {
-    width: 30vw;
+    width: 100vw;
     height: auto;
-    min-width: 215px;
     position: absolute;
     top: 8vh;
     display: none;
@@ -387,7 +386,10 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-color: transparent;
+    background-color: #333333;
+  }
+  .top-content .nav {
+    background-color: #060408;
   }
   .nav a {
     display: -webkit-box;
@@ -398,10 +400,10 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .postcontainer {
+  main {
     height: 150%;
   }
-  .postcontainer #postSummaries {
+  main #postSummaries {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
