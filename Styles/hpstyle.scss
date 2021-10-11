@@ -38,7 +38,9 @@
   .unclickable-playground {
     height: 70vh;
     width: 80vw;
+    position: relative;
     display: flex;
+    justify-content: flex-start;
     background-color: $baseColorText;
     border: 1px solid #9d91fc;
     border-radius: 5px;
@@ -48,8 +50,10 @@
   #playground {
     height: 57vh;
     width: 74vw;
+    position: relative;
     display: flex;
-    background-color: red;
+    justify-content: flex-start;
+    background-color: transparent;
   }
 
   .rotate {

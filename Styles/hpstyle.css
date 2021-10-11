@@ -197,9 +197,13 @@ a {
 .unclickable-playground {
   height: 70vh;
   width: 80vw;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   background-color: #efefef;
   border: 1px solid #9d91fc;
   border-radius: 5px;
@@ -210,10 +214,14 @@ a {
 #playground {
   height: 57vh;
   width: 74vw;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: red;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: transparent;
 }
 
 .rotate {

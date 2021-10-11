@@ -22,11 +22,10 @@ function userClicked(e) {
     var x = e.pageX;
     var y = e.pageY; 
     var blob = document.getElementById("blobAppear");
-    console.log(blob);
     blobAppear.style.display = '';
     blobAppear.style.position = 'absolute';
-    blobAppear.style.left = x + 'px';
-    blobAppear.style.top = y + 'px';
+    blobAppear.style.left = (x - 170) + 'px';
+    blobAppear.style.top = (y - 110)+ 'px';
     }, 400);
    
 }
